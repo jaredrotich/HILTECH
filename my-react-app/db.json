@@ -1,0 +1,134 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "HP Victus 16-r0010nia Gaming Laptop",
+        "description": "13th Generation Intel Core i7-13700H, 16GB DDR5 5200 DIMM RAM, 1TB PCIe Gen4 NVMe M.2 SSD, 16.1\" FHD 144Hz, 6GB GDDR6 NVIDIA GeForce RTX 3050, Audio by B&O Dual Speakers, Windows 11 Home",
+        "price": 149999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FVictus%2520Gaming%2520Laptop%252016-r0010nia.%252C%252C.png&w=640&q=75",
+        "category": "Laptops"
+      },
+      {
+        "id": 2,
+        "name": "Lenovo ThinkPad E14 Gen 6",
+        "description": "Intel Core Ultra 7 155H, 16GB DDR5-5600 RAM, 512GB PCIe NVMe PCIe SSD, 14\"",
+        "price": 124000,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FLenovo%2520ThinkPad%2520E14%2520Gen%25204%252012th%2520Gen%2520Intel%2520Core%2520i5-1235U%25208GB%2520RAM%2520512GB%2520SSD.jpeg&w=640&q=75",
+        "category": "Laptops"
+      },
+      {
+        "id": 3,
+        "name": "Hp ProBook 440 G11",
+        "description": "Intel Core Ultra 7 155U vPro Technology, 16GB RAM, 512GB SSD, 14\" WUXGA Display, Intel Graphics, Windows 11 Business Laptop, 1 Year Manufacturer Warranty",
+        "price": 97999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FHp%2520ProBook%2520440%2520G11%2520Intel%2520Core%2520Ultra%25207%2520155U%2520vPro%2520Technology%252016GB%2520RAM%2520512GB%2520SSD.jpg&w=640&q=75",
+        "category": "Laptops"
+      },
+      {
+        "id": 4,
+        "name": "Lenovo IdeaPad Slim 3",
+        "description": "14IrH8 13th Gen Intel Core i5-13420H, 16GB RAM, 512GB SSD, 14\" FHD Display, Integrated Graphics, Brand New, 1 Year Dealership Warranty",
+        "price": 62999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FLenovo%2520IdeaPad%2520Slim%25203%252014IrH8%252013th%2520Gen%2520Intel%2520Core%2520i5-13420H%252016GB%2520RAM%2520512GB%2520SSD%252014%2522%2520FHD%2520Display%2520Integrated%2520Graphics%2520Brand%2520New%25201%2520Year%2520Dealership%2520Warranty.jpg&w=640&q=75",
+        "category": "Laptops"
+      },
+      {
+        "id": 5,
+        "name": "Apple MacBook Air",
+        "description": "Intel Core i7 @ 2.2GHz, 8GB RAM, 128GB SSD, 13.3\" Display, Backlit Keyboard, A1466 BTO/CTO Early 2017 Ex Uk, Grade A Silver, 6 Months Warranty",
+        "price": 27999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FApple%2520MacBook%2520Air%2520Intel%2520Core%2520i7%2520%2540%25202.2GHz%25208GB%2520RAM%2520256GB%2520SSD%252013.3%2522%2520Display%2520Backlit%2520Keyboard%2520A1466%2520BTO%253ACTO%2520Early%25202017%2520Ex%2520Uk%2520Grade%2520A%2520Silver.jpeg&w=640&q=75",
+        "category": "Laptops"
+      },
+      {
+        "id": 6,
+        "name": "Apple Macbook Pro",
+        "description": "8th Gen Intel Core i5 Quad-Core, 16GB RAM, 256GB SSD, 13.3\" Retina Display With Touch Bar, Mid 2018 A1989, Ex UK, 6 Months Warranty",
+        "price": 37999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FApple%2520Macbook%2520Pro%2520a1989%25208th%2520Gen%2520Intel%2520Core%2520i7-8559U%2520%2540%25202.70GHz%25208GB%2520RAM%2520256GB%2520SSD.jpg&w=640&q=75",
+        "category": "Laptops"
+      },
+      {
+        "id": 7,
+        "name": "Apple MacBook Air M3",
+        "description": "Chip CPU 13\" LED-Backlit Display, 16GB RAM, 512GB SSD, Four-speaker Sound System, MacBook Air A3113, 1 Year Warranty",
+        "price": 171999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FMacBook%2520Air%2520A3113%2520M3%2520Chip%2520CPU%252013%2522%2520LED-Backlit%2520Display%252016GB%2520RAM%2520512GB%2520SSD%2520Four-speaker%2520Sound%2520System.JPG&w=640&q=75",
+        "category": "Laptops"
+      },
+      {
+        "id": 8,
+        "name": "Realme C67",
+        "description": "4G, 256GB, 8GB RAM, 6.72\" IPS LCD Display, Qualcomm Snapdragon 685, 108MP Main Camera, 8MP Front Camera, 5,000 mAh Battery",
+        "price": 24199,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FRealme%2520C67%25204G%2520256GB%25208GB%2520RAM%25206.72%2522%2520IPS%2520LCD%2520Display%2520Qualcomm%2520Snapdragon%2520685%2520108MP%2520Main%2520Camera%25208MP%2520Front%2520Camera%25205%252C000%2520mAh%2520Battery.jpg&w=640&q=75",
+        "category": "Smarthones"
+      },
+      {
+        "id": 9,
+        "name": "Realme C61",
+        "description": "4G, 128GB, 6GB RAM, 6.74\" IPS Display, Android 14 Realme UI Operating System, 50MP Dual Main Camera, 5MP Front Camera",
+        "price": 14999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FRealme%2520C61%25204G%2520128GB%25206GB%2520RAM%2520.JPG&w=640&q=75",
+        "category": "Smarthones"
+      },
+      {
+        "id": 10,
+        "name": "Samsung Galaxy A26",
+        "description": "256GB ROM, 8GB RAM, 5G, 6.7\" Super AMOLED Display, 50MP Triple Camera, Exynos 1380 chipset, Android 15, One UI 6, 25W Fast Charging, 5000mAh Battery, Hybrid Dual SIM, Dubai Warranty",
+        "price": 35999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FSamsung%2520Galaxy%2520A26%2520256GB%2520ROM%25208GB%2520RAM.jpg&w=640&q=75",
+        "category": "Smarthones"
+      },
+      {
+        "id": 11,
+        "name": "Xiaomi Redmi Note 14 Pro Plus",
+        "description": "5G, 512GB ROM, 12GB RAM, 6.67\" AMOLED FHD+ Display, Android 14 with HyperOS, 200MP AI Main Camera, 20MP Selfie Camera, 5110mAh Battery",
+        "price": 59999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FXiaomi%2520Redmi%2520Note%252014%2520Pro%2520Plus%25205G%2520512GB%2520ROM%252012GB%2520RAM.jpg&w=640&q=75",
+        "category": "Smarthones"
+      },
+      {
+        "id": 12,
+        "name": "Xiaomi Redmi Note 14 Pro",
+        "description": "512GB ROM, 12GB RAM, 6.67\" Display, Android 14 with HyperOS, 200MP Main Camera, 32MP Selfie Camera, Gorilla Glass Victus 2, 5500 mAh Battery",
+        "price": 41099,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FXiaomi%2520Redmi%2520Note%252014%2520Pro%2520512GB%2520ROM%252012GB%2520RAM%2520.jpg&w=640&q=75",
+        "category": "Smarthones"
+      },
+      {
+        "id": 13,
+        "name": "Xiaomi Redmi Note 14 Pro Plus",
+        "description": "5G, 256GB ROM, 8GB RAM, 6.67\" AMOLED Display, Android 14 with HyperOS, 200MP AI Main Camera, 20MP Selfie Camera, 5110mAh Battery",
+        "price": 49999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FXiaomi%2520Redmi%2520Note%252014%2520Pro%2520Plus%25205G%2520256GB%2520ROM%25208GB%2520RAM.jpg&w=640&q=75",
+        "category": "Smarthones"
+      }
+    ]
+  }

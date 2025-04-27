@@ -1,27 +1,22 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
 import HomePage from './pages/HomePage';
-import ProductPage from './pages/ProductPage';
-import Navbar from './components/Navbar';
-import './App.css';
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
-import { CartProvider } from "./context/CartContext";
+import Navbar from './components/Navbar';
+import './App.css';
 
 const App = () => {
   return (
-    <>
-     <CartProvider>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/checkout" element={<CheckoutPage />} />
-        </Routes>
-      </Router>
+    <CartProvider>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+      </Routes>
     </CartProvider>
-    </>
   );
 };
 

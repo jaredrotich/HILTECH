@@ -1,0 +1,19 @@
+.checkout {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .pay-btn {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .checkout-empty {
+    text-align: center;
+    padding: 50px;
+  }
+  

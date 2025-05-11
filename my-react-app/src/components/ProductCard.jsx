@@ -14,6 +14,13 @@ const ProductCard = ({ product }) => {
                 <p className="product-card__price">Ksh {price.toLocaleString()}</p>
                 <span className="product-card__discount">{discount}</span>
                 <span className="product-card__category">{category}</span>
+                <button
+  onClick={() => dispatch({ type: "ADD_TO_CART", payload: product })}
+  className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+>
+  Add to Cart
+</button>
+
             </div>
         </div>
     );

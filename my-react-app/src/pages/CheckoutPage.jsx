@@ -1,15 +1,16 @@
 
 import React, { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
+import  CartContext  from '../context/CartContext';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 
-const navigate = useNavigate();
+// const navigate = useNavigate();
 const handleConfirm = () => {
     navigate('/order-confirmation');
 }
 const Checkout = () => {
+    const navigate = useNavigate();
   const { cartItems, getTotalPrice } = useContext(CartContext);
 
   return (

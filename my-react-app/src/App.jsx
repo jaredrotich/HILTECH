@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Checkout from './pages/CheckoutPage';
@@ -8,21 +8,20 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
 const App = () => {
-    return (
-      
-        <>
-          <Navbar />
-          <Routes>
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
+  const [searchQuery, setSearchQuery] = useState('');
 
-            <Route path="/" element={<Home />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/order-confirmation" element={<OrderConfirmation />} />
-          </Routes>
-        </>
-    );
+  return (
+    <>
+      <Navbar onSearch={setSearchQuery} />
+      <Routes>
+        <Route path="/" element={<Home searchQuery={searchQuery} />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/order-confirmation" element={<OrderConfirmation />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </>
+  );
 };
-
 
 export default App;

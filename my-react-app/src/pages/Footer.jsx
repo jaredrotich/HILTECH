@@ -39,7 +39,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Payment + Social */}
+      
         <div className="footer__section">
           <h3>Payment Options</h3>
           <p><FaCcVisa /> Visa</p>

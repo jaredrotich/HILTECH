@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaSearch, FaShoppingCart, FaHeart, FaUserCircle } from 'react-icons/fa';
+import { CartContext } from '../context/CartContext';
 import './Navbar.css';
 
 const Navbar = ({ onSearch }) => {
   const [showAccountDropdown, setShowAccountDropdown] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const { cart } = useContext(CartContext);
   const navigate = useNavigate();
 
   const toggleDropdown = () => {
@@ -19,6 +21,8 @@ const Navbar = ({ onSearch }) => {
       navigate('/');
     }
   };
+
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <nav className="navbar">
@@ -48,16 +52,19 @@ const Navbar = ({ onSearch }) => {
 
       {/* Icons */}
       <div className="navbar__icons">
+        {/* Wishlist */}
         <div className="icon-wrapper">
           <FaHeart />
           <span className="icon-badge">0</span>
         </div>
-        <div className="icon-wrapper">
-          <FaShoppingCart />
-          <span className="icon-badge">0</span>
-        </div>
 
-        {/* Account Dropdown */}
+        {/* Cart (Link to Cart Page) */}
+        <NavLink to="/cart" className="icon-wrapper">
+          <FaShoppingCart />
+          {totalItems > 0 && <span className="icon-badge">{totalItems}</span>}
+        </NavLink>
+
+        {/* Account */}
         <div className="account-wrapper" onClick={toggleDropdown}>
           <FaUserCircle className="user-icon" />
           <span>Account</span>

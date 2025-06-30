@@ -1,0 +1,18 @@
+.thank-you-page {
+  max-width: 600px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.back-home-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}

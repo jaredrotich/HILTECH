@@ -129,6 +129,66 @@
         "stock": 20,
         "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FXiaomi%2520Redmi%2520Note%252014%2520Pro%2520Plus%25205G%2520256GB%2520ROM%25208GB%2520RAM.jpg&w=640&q=75",
         "category": "Smarthones"
+      },
+      {
+        "id": 14,
+        "name": "Apple iPhone 12",
+        "description": "The Apple iPhone 12 64GB is powered by the advanced A14 Bionic chip, ensuring swift and efficient performance. This 5G-capable device offers lightning-fast internet speeds, making streaming, downloading, and browsing a seamless experience. The 6.1 inch Super Retina XDR OLED display provides stunning visuals with vibrant colors and sharp details, perfect for both work and entertainment.",
+        "price": 51999,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FiPhone%252012.jpeg&w=640&q=75",
+        "category": "iPhone"
+      },
+      {
+        "id": 15,
+        "name": "Samsung Galaxy Tab S10 Plus 12GB RAM 256GB ROM ",
+        "description": "Samsung Galaxy Tab S10 Plus 12GB RAM 256GB ROM 12.4 inch Dynamic AMOLED 2X Display Android 14 13MP + 8MP UW Rear Camera 12MP Front Camera Nano-SIM + eSIM 10090mAh Li-Po Battery Wi-Fi + Cellular Dubai Warranty",
+        "price": 114999.00,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FSamsung%2520Galaxy%2520Tab%2520S10%2520Plus%252012GB%2520RAM%2520256GB%2520ROM%252012.4%2522%2520Dynamic%2520AMOLED%25202X%2520Display%2520Android%252014%252013MP%2520%252B%25208MP%2520UW%2520Rear%2520Camera%252012MP%2520Front%2520Camera%2520Nano-SIM%2520%252B%2520eSIM%252010%252C090mAh%2520Li-Po%2520Battery%2520Wi-Fi%2520%252B%2520Cellular%2520Dubai%2520Warranty.jpg&w=640&q=75",
+        "category": "Tablet"
+      },
+      {
+        "id": 16,
+        "name": "Tecno T528 Dual Sim ",
+        "description": "Tecno T528 Dual Sim 3.0 Display Screen 16MB ROM 8MB RAM FM Radio Bluetooth 2500mAh Battery",
+        "price": 2200.00,
+        "discount": "-10%",
+        "stock": 20,
+        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fsaruk-web-images.s3.eu-north-1.amazonaws.com%2FTecno%2520T528%2520Dual%2520Sim%25203.0%2522%2520Display%2520Screen%252016MB%2520ROM%25208MB%2520RAM%2520FM%2520Radio%25202500mAh%2520Battery.jpg&w=640&q=75",
+        "category": "Kabambe"
+      },
+      {
+        "id": 17,
+        "name": "Vitron HTC3200S, 32 Smart Frameless Android LED TV With Bluetooth 1YR WRTY ",
+        "description": "Vitron HTC3200S 32 Smart Frameless Android LED TV, With Bluetooth, (1YR WRTY)",
+        "discount": "-10%",
+        "price": 11210,
+        "stock": 20,
+        "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/37/0349162/1.jpg?9129",
+        "category": "Electronics"
+      },
+      {
+        "id": 18,
+        "name": "360° BULB CCTV WiFi SECURITY HD CAMERA AND TILT FISH EYE DESIGN CAMERA HIDDEN / NANNY / SECURITY CAMERA WITH LED MOTION SENSOR LIGHTS. CCTV 360 SECURITY SURVEILLANCE PANORAMIC CAMERA WITH 2 WAY AUDIO COMNICATION, SMART MOTION DETECTION,",
+        "description": "360° BULB CCTV WiFi SECURITY HD CAMERA AND TILT FISH EYE DESIGN CAMERA HIDDEN / NANNY / SECURITY CAMERA WITH LED MOTION SENSOR LIGHTS. CCTV 360 SECURITY SURVEILLANCE PANORAMIC CAMERA WITH 2 WAY AUDIO COMNICATION, SMART MOTION DETECTION,",
+        "discount": "-10%",
+        "price": 1600,
+        "stock": 20,
+        "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/6922122/1.jpg?9891",
+        "category": "Camera & Photo"
+      },
+      {
+        "id": 19,
+        "name": "Syble Handheld 2.4G Wireless 1D/2D/QR Barcode Scanner Bar Code",
+        "description": "Syble Handheld 2.4G Wireless 1D/2D/QR Barcode Scanner Bar Code",
+        "discount": "-10%",
+        "price": 3500,
+        "stock": 20,
+        "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/94/0630122/1.jpg?1659",
+        "category": "Office Electronics"
       }
     ]
   }

@@ -28,7 +28,7 @@ const ProductCard = ({ product, onAddToCart }) => {
           {name}
         </h3>
         <p className="product-card__description">
-          {description.slice(0, 100)}...
+    
         </p>
         <p className="product-card__price">Ksh {price.toLocaleString()}</p>
         <div className="product-card__meta">

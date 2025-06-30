@@ -1,0 +1,38 @@
+.about-container {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/032/994/496/small/data-visualization-close-up-technology-digitalization-optimization-of-high-tech-electronics-data-mining-artificial-intelligence-business-analytics-ai-generative-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 90%;
+}
+
+.about-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.about-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-content li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}

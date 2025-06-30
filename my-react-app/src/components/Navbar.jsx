@@ -26,19 +26,21 @@ const Navbar = ({ onSearch }) => {
 
   return (
     <nav className="navbar">
-      {/* Logo */}
+     
       <div className="navbar__logo">
         <NavLink to="/">HILTECH</NavLink>
       </div>
 
-      {/* Links */}
+      
       <ul className="navbar__links">
         <li><NavLink to="/" className="nav-link">Home</NavLink></li>
         <li><NavLink to="/products" className="nav-link">Products</NavLink></li>
         <li><NavLink to="/contact" className="nav-link">Contact</NavLink></li>
+        <li><NavLink to="/about" className="nav-link">About</NavLink></li>
+
       </ul>
 
-      {/* Search */}
+     
       <form onSubmit={handleSearchSubmit} className="navbar__search">
         <FaSearch className="search-icon" />
         <input
@@ -50,21 +52,20 @@ const Navbar = ({ onSearch }) => {
         <button type="submit">Search</button>
       </form>
 
-      {/* Icons */}
       <div className="navbar__icons">
-        {/* Wishlist */}
+        
         <div className="icon-wrapper">
           <FaHeart />
           <span className="icon-badge">0</span>
         </div>
 
-        {/* Cart (Link to Cart Page) */}
+        
         <NavLink to="/cart" className="icon-wrapper">
           <FaShoppingCart />
           {totalItems > 0 && <span className="icon-badge">{totalItems}</span>}
         </NavLink>
 
-        {/* Account */}
+        
         <div className="account-wrapper" onClick={toggleDropdown}>
           <FaUserCircle className="user-icon" />
           <span>Account</span>

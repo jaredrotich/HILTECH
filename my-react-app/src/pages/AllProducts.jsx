@@ -3,10 +3,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import './AllProducts.css';
 
-const AllProducts = ({ searchQuery }) => {
+const AllProducts = ({ searchQuery, onAddToCart }) => {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [showAppleDropdown, setShowAppleDropdown] = useState(false);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -20,15 +21,23 @@ const AllProducts = ({ searchQuery }) => {
       .then(data => {
         setProducts(data);
 
-        
         const uniqueCategories = Array.from(
           new Set(data.map(p => capitalizeCategory(p.category)))
         );
 
-        setCategories(['All', ...uniqueCategories]);
+        const customCategories = [
+          'All',
+          'Apple Store',
+          'Audio Devices',
+          'Desktops',
+          'Networking',
+          'Gaming Essentials',
+          ...uniqueCategories,
+        ];
 
-      
-        if (urlCategory && uniqueCategories.includes(urlCategory)) {
+        setCategories(customCategories);
+
+        if (urlCategory && customCategories.includes(urlCategory)) {
           setSelectedCategory(urlCategory);
         }
       });
@@ -39,12 +48,18 @@ const AllProducts = ({ searchQuery }) => {
   };
 
   const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-    if (category === 'All') {
-      navigate('/products');
-    } else {
-      navigate(`/products?category=${category}`);
+    if (category === 'Apple Store') {
+      setShowAppleDropdown(!showAppleDropdown);
+      return;
     }
+    setSelectedCategory(category);
+    navigate(category === 'All' ? '/products' : `/products?category=${category}`);
+  };
+
+  const handleAppleSubCategory = (sub) => {
+    setSelectedCategory(sub);
+    navigate(`/products?category=${sub}`);
+    setShowAppleDropdown(false);
   };
 
   const filtered = products.filter((product) => {
@@ -62,22 +77,37 @@ const AllProducts = ({ searchQuery }) => {
         <h3>Categories</h3>
         <ul>
           {categories.map((cat) => (
-            <li
-              key={cat}
-              className={cat === selectedCategory ? 'active' : ''}
-              onClick={() => handleCategoryClick(cat)}
-            >
-              {cat}
-            </li>
+            <React.Fragment key={cat}>
+              <li
+                className={cat === selectedCategory ? 'active' : ''}
+                onClick={() => handleCategoryClick(cat)}
+              >
+                {cat}
+              </li>
+              {cat === 'Apple Store' && showAppleDropdown && (
+                <ul className="dropdown">
+                  <li onClick={() => handleAppleSubCategory('iPhone')}>iPhone</li>
+                  <li onClick={() => handleAppleSubCategory('MacBook')}>MacBook</li>
+                  <li onClick={() => handleAppleSubCategory('Apple Watch')}>Apple Watch</li>
+                  <li onClick={() => handleAppleSubCategory('iPad')}>iPad</li>
+                </ul>
+              )}
+            </React.Fragment>
           ))}
         </ul>
       </aside>
 
       <section className="product-grid">
         {filtered.length > 0 ? (
-          filtered.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))
+          <div className="product-grid-wrapper">
+            {filtered.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                onAddToCart={onAddToCart}
+              />
+            ))}
+          </div>
         ) : (
           <p>No products found.</p>
         )}

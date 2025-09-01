@@ -1,0 +1,31 @@
+.admin-sidebar button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.admin-sidebar ul.submenu {
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 2px solid #555;
+}
+
+.admin-sidebar ul.submenu li {
+  list-style: circle;
+  margin: 5px 0;
+}
+
+.admin-sidebar a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.admin-sidebar a.active {
+  color: #00ffaa;
+  font-weight: bold;
+}

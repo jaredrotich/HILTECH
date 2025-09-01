@@ -14,10 +14,31 @@ const SignIn = () => {
     password: Yup.string().min(6, 'Minimum 6 characters').required('Password is required'),
   });
 
-  const handleSubmit = (values) => {
-    console.log('Logging in with:', values);
-    // Add real login logic here
-  };
+  const handleSubmit = async (values, { setSubmitting }) => {
+  try {
+    const res = await fetch("http://localhost:5000/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include", 
+      body: JSON.stringify(values),
+    });
+
+    const data = await res.json();
+    if (res.ok) {
+      console.log("Logged in:", data);
+      
+    } else {
+      alert(data.error || "Login failed");
+    }
+  } catch (err) {
+    console.error("Login error:", err);
+  } finally {
+    setSubmitting(false);
+  }
+};
+
 
   return (
     <div className="signin-wrapper">

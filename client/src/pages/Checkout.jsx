@@ -4,28 +4,14 @@ import { CartContext } from '../context/CartContext';
 import './Checkout.css';
 
 const countiesWithConstituencies = {
-  Nairobi: [
-    "Westlands", "Dagoretti North", "Dagoretti South", "Langata", "Kibra", "Roysambu", "Kasarani",
-    "Ruaraka", "Embakasi North", "Embakasi Central", "Embakasi East", "Embakasi West",
-    "Embakasi South", "Starehe", "Mathare"
-  ],
-  Kiambu: [
-    "Gatundu South", "Gatundu North", "Juja", "Thika Town", "Ruiru", "Githunguri", "Kiambu",
-    "Kabete", "Kikuyu", "Limuru", "Lari"
-  ],
-  Nakuru: [
-    "Naivasha", "Gilgil", "Subukia", "Rongai", "Bahati", "Nakuru Town West", "Nakuru Town East",
-    "Kuresoi North", "Kuresoi South", "Molo", "Njoro"
-  ],
-  Mombasa: [
-    "Changamwe", "Jomvu", "Kisauni", "Nyali", "Likoni", "Mvita"
-  ],
-  Kisumu: [
-    "Kisumu East", "Kisumu West", "Kisumu Central", "Seme", "Nyando", "Muhoroni", "Nyakach"
-  ]
+  Nairobi: [/*...*/],
+  Kiambu: [/*...*/],
+  Nakuru: [/*...*/],
+  Mombasa: [/*...*/],
+  Kisumu: [/*...*/]
 };
 
-const Checkout = () => {
+const Checkout = ({ onOrderPlaced }) => {
   const { cart, getTotalPrice, clearCart } = useContext(CartContext);
   const navigate = useNavigate();
 
@@ -57,8 +43,27 @@ const Checkout = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("🧾 ORDER DETAILS:", formData);
-    console.log("🛒 CART:", cart);
+    const generatedOrder = {
+      id: Date.now().toString().slice(-5), // random last 5 digits
+      created_at: new Date().toLocaleString(),
+      customer: {
+        name: formData.name,
+        phone: formData.phone,
+        address: `${formData.region}, ${formData.constituency}, ${formData.county}`
+      },
+      items: cart.map(item => ({
+        name: item.name,
+        description: item.description,
+        image: item.image,
+        quantity: item.quantity,
+        price: item.price
+      })),
+      subtotal: getTotalPrice(),
+      shipping: 250,
+      total: getTotalPrice() + 250
+    };
+
+    onOrderPlaced(generatedOrder);
     clearCart();
     navigate('/thank-you');
   };

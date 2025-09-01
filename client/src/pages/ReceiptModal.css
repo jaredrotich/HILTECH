@@ -1,0 +1,156 @@
+.receipt-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.receipt-modal {
+  background: white;
+  width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: crimson;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.receipt-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.receipt-header h2 {
+  margin: 0;
+  color: #2d2d2d;
+}
+
+.receipt-header p {
+  margin: 3px 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.order-title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.order-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.order-meta p {
+  margin: 5px 0;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.receipt-table th, .receipt-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.receipt-table th {
+  background-color: #f2f2f2;
+}
+
+.receipt-table img {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.totals {
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: right;
+}
+
+.totals p, .totals h4 {
+  margin: 5px 0;
+}
+
+.terms {
+  font-size: 13px;
+  margin-top: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+}
+
+.terms h4 {
+  margin-bottom: 5px;
+}
+
+.terms ol {
+  padding-left: 18px;
+}
+
+.terms li {
+  margin-bottom: 5px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .receipt-modal, .receipt-modal * {
+    visibility: visible;
+  }
+
+  .receipt-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+    background: white;
+    padding: 0;
+  }
+
+  .close-btn {
+    display: none;
+  }
+}

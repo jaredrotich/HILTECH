@@ -1,0 +1,38 @@
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+}
+
+.admin-sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin: 15px 0;
+}
+
+.admin-sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 30px;
+  background: #f8f9fa;
+}

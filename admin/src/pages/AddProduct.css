@@ -1,0 +1,54 @@
+.add-product {
+  max-width: 600px;
+  margin: 3rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-product h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.add-product input,
+.add-product textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.add-product input:focus,
+.add-product textarea:focus {
+  border-color: #00c896;
+  outline: none;
+}
+
+.add-product textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.add-product button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #00c896;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-product button:hover {
+  background-color: #00a97c;
+}
